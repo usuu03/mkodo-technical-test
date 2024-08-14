@@ -1,0 +1,25 @@
+Due to experiencing difficulties with the navigation dependencies,
+I decided it would be best for me to write a covering letter on
+how I would approach so that I do not waste any more time.
+
+I would firstly implement a component called 'LotteryDrawDetail'. 
+This component would receive the draw data as prop similar to how I 
+did with the LotteryDrawList component. However, in this case I would 
+pass the data as prop when navigating from the list view. I would use
+the data to display all the draw numbers and the bonus ball in a clean and
+organised layout. 
+
+
+For navigation, I'd set up a stack navigator that allows transitioning
+between the 'LotteryDrawList' and 'LotteryDrawDetail' components. When a user taps on 
+a specific draw from the list, the app would navigate to the 'LotteryDrawDetail'
+screen, passing the selected draw's data. This would allow a smooth and intuitive 
+experience.
+
+For styling, I would want to use a card-style layout for the numbers, with clear labels
+for each number and then the bonus ball. I would also add a back button for easy navigation 
+back to the list of draws.
+
+If I had more time, I would have improved the detail view with additional 
+features, like displaying the prize amount in a more prominent way or 
+adding animations when transitioning between screens to improve the overall user experience. 
