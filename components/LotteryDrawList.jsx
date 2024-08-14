@@ -27,10 +27,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#F5F5DC",
   },
   title: {
-    marginTop: 5,
+    marginTop: 15,
     fontSize: 35,
     marginRight: 50,
     marginLeft: 110,
+    fontWeight: "bold",
   },
   item: {
     backgroundColor: "#80ccff",
