@@ -50,7 +50,7 @@ This will execute the test cases located in the `__tests__` directory and displa
 
 ### App Preview
 
-Here’s how the app should look:
+Here’s how the app should look on an iPhone device:
 
 ![App Screenshot](/assets/screenshot.png)
 
