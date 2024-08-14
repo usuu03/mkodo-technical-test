@@ -54,6 +54,10 @@ Here’s how the app should look on an iPhone device:
 
 ![App Screenshot](./assets/screenshot.PNG)
 
+Here are the test results:
+
+![Test Screenshot](./assets/IMG_3295.png)
+
 ### Notes
 
 - Ensure your device and computer are connected to the same network when using the Expo Go app.
