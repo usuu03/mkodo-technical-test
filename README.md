@@ -52,7 +52,7 @@ This will execute the test cases located in the `__tests__` directory and displa
 
 Here’s how the app should look:
 
-![App Screenshot](./assets/screenshot.png)
+![App Screenshot](/assets/screenshot.png)
 
 > Replace `./assets/screenshot.png` with the actual path to your screenshot in the project directory.
 
