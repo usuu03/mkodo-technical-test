@@ -64,7 +64,7 @@ Here are the test results:
 
 Here is the video proof:
 
-![Applicaton Screenshot](./assets/video.MP4)
+[Watch the Video](./assets/video.MP4)
 
 ### Notes
 
