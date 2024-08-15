@@ -25,7 +25,7 @@ This app displays a list of lottery draws, allowing users to view details about 
    ```
 2. Install the dependencies:
    ```bash
-   npm install
+   yarn install
    ```
 
 ### Running the App
