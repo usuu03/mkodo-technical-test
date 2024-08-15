@@ -23,7 +23,11 @@ This app displays a list of lottery draws, allowing users to view details about 
    ```bash
    git clone https://github.com/usuu03/mkodo-technical-test.git
    ```
-2. Install the dependencies:
+2. Navigate to directory
+   ```bash
+   cd app
+   ```
+3. Install the dependencies:
    ```bash
    yarn install
    ```
@@ -56,7 +60,11 @@ Here’s how the app should look on an iPhone device:
 
 Here are the test results:
 
-![Test Screenshot](./assets/IMG_3295.png)
+![Test Screenshot](./assets/tests.png)
+
+Here is the video proof:
+
+![Applicaton Screenshot](./assets/video.MP4)
 
 ### Notes
 
