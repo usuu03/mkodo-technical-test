@@ -1,7 +1,7 @@
 // __tests__/LotteryDrawList.test.js
 import { render } from "@testing-library/react-native";
 import React from "react";
-import LotteryDrawList from "../components/LotteryDrawList";
+import App from "../App";
 
 // Mocking the lottery data
 jest.mock("../utils/lotteryData", () => ({
@@ -47,14 +47,14 @@ jest.mock("../utils/lotteryData", () => ({
 
 describe("LotteryDrawList", () => {
   it("renders the title 'List of Draws'", () => {
-    const { getByText } = render(<LotteryDrawList />);
+    const { getByText } = render(<App />);
 
     // Check if the title is rendered correctly
     expect(getByText("List of Draws")).toBeTruthy();
   });
 
   it("renders the correct number of draws", () => {
-    const { getAllByText } = render(<LotteryDrawList />);
+    const { getAllByText } = render(<App />);
 
     // There should be two three dates in the mock data
     const drawItems = getAllByText(/2023-/); // Regex to match the date format
@@ -62,7 +62,7 @@ describe("LotteryDrawList", () => {
   });
 
   it("renders each draw's ID and date", () => {
-    const { getByText } = render(<LotteryDrawList />);
+    const { getByText } = render(<App />);
 
     // Check if specific IDs and dates are rendered
     expect(getByText("draw-1")).toBeTruthy();

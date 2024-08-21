@@ -1,27 +1,22 @@
 import React from "react";
-import { FlatList, SafeAreaView, StyleSheet, Text, View } from "react-native";
-import lotteryData from "../utils/lotteryData";
+import { SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
+import lotteryData from "./utils/lotteryData";
 
-// LotteryDrawList is a functional component that renders a list of lottery draws.
-export default function LotteryDrawList() {
+// App is a functional component that renders a list of lottery draws.
+export default function App() {
   return (
     // SafeAreaView ensures that content is rendered within the safe boundaries of the device screen.
     <SafeAreaView style={styles.container}>
       <Text style={styles.title}>List of Draws</Text>
-      {/* FlatList is used to render a list of lottery draws from the data */}
-      <FlatList
-        // Data is passed from the lotteryData.draws array
-        data={lotteryData.draws}
-        // renderItem defines how each item in the list is displayed
-        renderItem={({ item }) => (
-          <View style={styles.item}>
-            <Text style>{item.id}</Text>
+      {/* ScrollView is used to render a list of lottery draws from the data */}
+      <ScrollView>
+        {lotteryData.draws.map((item) => (
+          <View key={item.id} style={styles.item}>
+            <Text>{item.id}</Text>
             <Text>{item.drawDate}</Text>
           </View>
-        )}
-        // keyExtractor is used to uniquely identify each item using its ID
-        keyExtractor={(item) => item.id}
-      />
+        ))}
+      </ScrollView>
     </SafeAreaView>
   );
 }
